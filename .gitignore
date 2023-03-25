@@ -12,4 +12,5 @@
 *.vsix
 
 # dotnet 7 build 
-!/obj
+obj/
+bin/
