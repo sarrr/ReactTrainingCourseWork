@@ -14,3 +14,4 @@
 # dotnet 7 build 
 obj/
 bin/
+.DS_Store/
