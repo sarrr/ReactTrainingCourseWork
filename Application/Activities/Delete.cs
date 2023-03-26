@@ -23,7 +23,7 @@ namespace Application.Activities
 
             }
 
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Unit> Handle(Command request)
             {
                 var activity = await _context.Activities.FindAsync(request.Id);
 

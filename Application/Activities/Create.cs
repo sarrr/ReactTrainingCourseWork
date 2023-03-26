@@ -21,7 +21,7 @@ namespace Application.Activities
 
             }
 
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Unit> Handle(Command request)
             {
                 _context.Activities.Add(request.Activity);
 
