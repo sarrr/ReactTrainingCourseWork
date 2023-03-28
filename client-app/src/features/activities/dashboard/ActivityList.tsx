@@ -13,7 +13,7 @@ export default function ActivityList({ activities, selectActivity, deleteActivit
     const [target, setTarget] = useState('');
     
     function handleActivityDelete(e: SyntheticEvent<HTMLButtonElement>, id: string) {
-        setTarget(e.currentTarget.name);
+        setTarget(e.currentTarget.id);
         deleteActivity(id);
     }
 
