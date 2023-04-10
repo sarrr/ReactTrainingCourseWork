@@ -2,7 +2,7 @@ import {makeAutoObservable} from "mobx";
 import {Activity} from '../app/models/activity';
 import agent from '../app/api/agent';
 
-export default class ActivityStore {
+export class ActivityStore {
 
     activities: Activity[] = [];
     selectedActivity: Activity | null = null;
