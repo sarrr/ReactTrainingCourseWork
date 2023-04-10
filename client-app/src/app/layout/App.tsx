@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Container} from 'semantic-ui-react';
 import { Activity } from '../models/activity';
 import NavBar from './navbar';
@@ -8,6 +8,8 @@ import agent from '../api/agent';
 import LoadingComponent from './LoadingComponents';
 
 function App() {
+
+  const {activityStore} = useContext();
 
   const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<Activity | undefined>(undefined);
